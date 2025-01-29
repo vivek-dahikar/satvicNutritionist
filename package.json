@@ -1,0 +1,27 @@
+{
+  "name": "satvicnutritionist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server './dist' --files './dist/**/*' --startPath 'index.html'",
+    "build": "npm run minify-html && npm run minify-css && npm run minify-js && npm run copy-assets",
+    "minify-html": "node scripts/minify-html.js",
+    "minify-css": "node scripts/minify-css.js",
+    "minify-js": "node scripts/minify-js.js",
+    "copy-assets": "node scripts/copy-assets.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "cssnano": "^7.0.6",
+    "html-minifier-terser": "^7.2.0",
+    "ncp": "^2.0.0",
+    "terser": "^5.37.0"
+  }
+}
