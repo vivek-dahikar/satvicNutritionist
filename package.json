@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "browser-sync start --server './dist' --files './dist/**/*' --startPath 'index.html'",
-    "build": "npm run minify-html && npm run minify-css && npm run minify-js && npm run copy-assets",
+    "build": "npm run minify-html && npm run minify-css && npm run minify-js && npm run copy-assets && npx serve dist",
     "minify-html": "node scripts/minify-html.js",
     "minify-css": "node scripts/minify-css.js",
     "minify-js": "node scripts/minify-js.js",
