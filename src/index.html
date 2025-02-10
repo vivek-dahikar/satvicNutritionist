@@ -9,24 +9,6 @@
   <!-- Bootstrap CSS (Fastest Method) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
-  <!-- Inline Critical CSS -->
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 1em;
-    }
-    main {
-      padding: 2em;
-    }
-  </style>
-
   <!-- Preload Non-Critical CSS -->
   <link rel="preload" href="assets/css/styles.css" as="style" type="text/css" crossorigin="anonymous">
 
@@ -58,7 +40,7 @@
   <nav class="myNav navbar navbar-expand-lg navbar-light sticky-top shadow-sm">
     <div class="container-fluid flex-nowrap">
         <!-- Left: Logo & Site Name -->
-        <a class="navbar-brand align-items-center" href="#">
+        <a class="navbar-brand align-items-center" href="index.html">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19%" height="99" viewBox="0 0 248 243" fill="none">
             <g clip-path="url(#clip0_62_379)">
             <rect width="248.018" height="243" rx="121.5" fill="url(#pattern0_62_379)"/>
@@ -94,27 +76,30 @@
        <!-- Right: Navbar Links -->
         <div class="offcanvas offcanvas-start w-50 custom-offcanvas" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasMenuLabel">Main Menu</h5>
+            <h5 class="fw-bold	offcanvas-title" id="offcanvasMenuLabel">Main Menu</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body d-flex flex-column align-items-center">
             <ul class="navbar-nav w-75 d-flex justify-content-between">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link active mobileNav" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link mobileNav" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
+                <a class="nav-link mobileNav" href="services.html">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Testimonials</a>
+                <a class="nav-link mobileNav" href="testimonials.html">Testimonials</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+              <li class="nav-item d-flex align-items-center">
+                <a class="btn btn-primary rounded-pill mobileNav myBtn" href="contact.html">Contact</a>
               </li>
             </ul>
+          </div>
+          <div class="mt-auto w-100 text-center mobileIMG">
+            <img src="assets/images/Ellipse 40.png" alt="Your Logo" class="img-fluid w-75">
           </div>
         </div>
     </div>

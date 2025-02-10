@@ -50,9 +50,14 @@ body {
 
   .heroHeading
   {
-    font-size: 4.1vw;
+    font-size: 3.1vw;
     line-height: 4.3vw;
     letter-spacing: 1px;
+  }
+
+  .mobileIMG
+  {
+    display: none;
   }
 
   /* .typing-text { */
@@ -159,9 +164,16 @@ body {
 }
 
 
-@media (max-width: 992px) { 
-  .myNav {
+@media (max-width: 992px) 
+{ 
+  .myNav 
+  {
       height: 100px; /* Allows expansion when toggled */
+  }
+
+  .mobileIMG
+  {
+    display: block;
   }
 
   /* Custom Toggler Button */
@@ -232,7 +244,8 @@ body {
 }
 }
 
-@media (max-width: 768px) 
+
+@media (max-width: 767px) 
 { 
   .myHeading 
   {
@@ -249,6 +262,10 @@ body {
   .heroSection
   {
     margin-top: 0rem;
+  }
+
+  .mobileNav{
+    font-weight: 600 !important;
   }
 }
 
