@@ -93,13 +93,11 @@
               <li class="nav-item">
                 <a class="nav-link mobileNav" href="testimonials.html">Testimonials</a>
               </li>
-              <li class="nav-item d-flex align-items-center">
+              <li class="nav-item  d-flex align-items-center contactBtn">
                 <a class="btn btn-primary rounded-pill mobileNav myBtn" href="contact.html">Contact</a>
               </li>
+              
             </ul>
-          </div>
-          <div class="mt-auto w-100 text-center mobileIMG">
-            <img src="assets/images/Ellipse 40.png" alt="Your Logo" class="img-fluid w-75">
           </div>
         </div>
     </div>
@@ -232,10 +230,9 @@
             </div>
         </div>
     </section>
+    <!----------------- -->
 
 
-
-    <!-- ,,,,,,,,,,,,,,,,,,,,,,--------------- -->
     <!-- transformations -->
     <section class="py-5">  
       <div class="container text-center mt-5">
@@ -277,6 +274,8 @@
       </div>
     </section>
     <!-- <--------->
+
+    <!-- our services -->
     <section class="py-5 bg-skin">
       <div class="container text-center mt-5">
           <h2 class="headingLine mb-5 mt-5 myHeading">Our Services</h2>
@@ -332,10 +331,12 @@
   
           <!-- Button to visit Services Page -->
           <div class="mt-4">
-              <a href="/services" class="myBtn btn btn-success rounded-pill btn-lg px-5 py-3 shadow-lg">Explore More Services</a>
+              <a href="/src/services.html" class="myBtn btn btn-success rounded-pill btn-lg px-5 py-3 shadow-lg">Explore More Services</a>
           </div>
       </div>
   </section>
+
+  <!----------------->
   
   
   
@@ -409,9 +410,8 @@
     
         </div>
       </div>
-    </section>
-    
-    <!-- Custom CSS -->
+
+         <!-- Custom CSS -->
     <style>
       /* Rounded indicators */
       .carousel-indicators [data-bs-target]      
@@ -459,6 +459,7 @@
         width: 90px;
       }
     </style>
+    </section>
 
   <section class="video-section mb-5 mt-5">
     <div class="container">
@@ -503,8 +504,9 @@
         </div>
     </div>
   </section>
-      <section>
+
         <!-- Contact Start -->
+      <section>
       <div class="d-flex flex-wrap justify-content-center mt-5 mb-5" id="contact">
         <div class="container py-5">
             <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -526,10 +528,16 @@
                     <hr class="w-100">
                     <p class="mb-2">Follow me:</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square me-2" style="background-color: #1877F2; color: white;" href="">
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="btn btn-square me-2" style="background-color: #FF0000; color: white;" href="">
+                          <i class="fab fa-youtube"></i>
+                        </a>
+                        <a class="btn btn-square me-2" style="background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5); color: white;"
+                        href="">
+                        <i class="fab fa-instagram"></i>
+                      </a>
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -589,7 +597,7 @@
             <small>✨ Coded by <strong>Vivek</strong> | Crafted with ❤️ by <strong>Tanya</strong> ✨</small>
         </div>
       </div>
-  </footer>
+    </footer>
 
   <script>
       document.getElementById("currentYear").textContent = new Date().getFullYear();

@@ -13,7 +13,7 @@
       
         <!-- Async Load Non-Critical CSS -->
         <link rel="stylesheet" href="assets/css/styles.css" media="print" onload="this.media='all'">
-        <link rel="stylesheet" href="assets/css/about.css" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="assets/css/contact.css" media="print" onload="this.media='all'">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"  media="print" onload="this.media='all'">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
@@ -71,18 +71,15 @@
                     <a class="nav-link  mobileNav" href="about.html">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active mobileNav" href="services.html">Services</a>
+                    <a class="nav-link mobileNav" href="services.html">Services</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link mobileNav" href="testimonials.html">Testimonials</a>
                   </li>
-                  <li class="nav-item d-flex align-items-center">
-                <a class="btn btn-primary rounded-pill mobileNav myBtn" href="contact.html">Contact</a>
+                  <li class="nav-item d-flex align-items-center contactBtn">
+                    <a class="btn btn-primary rounded-pill mobileNav myBtn active" href="contact.html">Contact</a>
                   </li>
                 </ul>
-              </div>
-              <div class="mt-auto w-100 text-center mobileIMG">
-                <img src="assets/images/Ellipse 40.png" alt="Your Logo" class="img-fluid w-75">
               </div>
             </div>
         </div>
@@ -90,7 +87,167 @@
     <main?>
   
     </main>
-    <!-- <footer class="text-dark bg-skin">
+
+    <section id="contact">
+      <div class="container my-5">
+          <div class="row justify-content-center">
+              <div class="col-md-10">
+                  <div class="contact-section text-center p-4 border rounded shadow-lg" style="background: #fff;">
+                      <h2 class="mb-4 myHeading">Get in Touch</h2>
+                      <p class="text-muted mb-4">We'd love to hear from you! Fill out the form below and we'll get back to you as soon as possible.</p>
+                      
+                      <!-- Contact Details -->
+                      <div class="row text-start mb-4">
+                          <div class="col-md-4 contact-info">
+                              <i class="fas fa-map-marker-alt"></i> Vrindavan Greens, UP, India
+                          </div>
+                          <div class="col-md-4 contact-info">
+                              <i class="fas fa-envelope"></i> kalpana@satvicnutritionist.com
+                          </div>
+                          <div class="col-md-4 contact-info">
+                              <i class="fas fa-phone"></i> +91 6398 259 086
+                          </div>
+                      </div>
+  
+                      <!-- Styled Google Form Embed -->
+                      <div class="embed-responsive embed-responsive-16by9 border rounded shadow-sm" style="overflow: hidden; border-radius: 10px;">
+                          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSedRJIJcXg07ZjlKjbmKDpdpa362vmHZjWQc7Vy5pfGzwHIeA/viewform?usp=sf_link" 
+                                  width="100%" height="600" style="border: none; border-radius: 10px;"></iframe>
+                      </div>
+  
+                      <p class="mt-4 text-muted">* Your information will be kept private and not shared.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+   <!-- Testimonials Section -->
+   <section id="testimonials" class="testimonials section py-5">
+    <div class="container text-center p-3" data-aos="fade-up">
+      <h2 class="headingLine p-3 mb-5 mt-5 myHeading">Testimonials</h2>
+      <p class="p-3">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    </div>
+  
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        
+        <div class="carousel-inner">
+          
+          <!-- Testimonial Item 1 -->
+          <div class="carousel-item active">
+            <div class="testimonial-item text-center">
+              <img src="assets/images/Ellipse 40.png" class="testimonial-img rounded-circle" alt="">
+              <h3 class="fs-5 m-3">Saul Goodman</h3>
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                Proin iaculis purus consequat sem cure dignissim donec porttitora entum suscipit rhoncus.
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+  
+          <!-- Testimonial Item 2 -->
+          <div class="carousel-item">
+            <div class="testimonial-item text-center">
+              <img src="assets/images/Ellipse 40.png" class="testimonial-img rounded-circle" alt="">
+              <h3 class="fs-5 m-3">Sara Wilsson</h3>
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                Export tempor illum tamen malis malis eram quae irure esse labore.
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+  
+          <!-- Testimonial Item 3 -->
+          <div class="carousel-item">
+            <div class="testimonial-item text-center">
+              <img src="assets/images/Ellipse 40.png" class="testimonial-img rounded-circle" alt="">
+              <h3 class="fs-5 m-3">Jena Karlis</h3>
+              <p class="m-3">
+                <i class="bi bi-quote quote-icon-left"></i>
+                Enim nisi quem export duis labore cillum quae magna enim sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum culpa harum, provident minima commodi rerum adipisci dolores. 
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+  
+        </div>
+  
+        <!-- Controls -->
+        <button class="carousel-control-prev custom-control w-5 h-5 mt-5" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon custom-arrow w-25"></span>
+        </button>
+        <button class="carousel-control-next custom-control w-5 h-5 mt-5" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon custom-arrow w-25"></span>
+        </button>
+  
+        <!-- Indicators -->
+        <div class="carousel-indicators position-sticky">
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active rounded-indicator"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" class="rounded-indicator"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" class="rounded-indicator"></button>
+        </div>
+  
+      </div>
+    </div>
+
+       <!-- Custom CSS -->
+  <style>
+    /* Rounded indicators */
+    .carousel-indicators [data-bs-target]      
+    {
+      width: 12px;
+      height: 12px;
+      opacity: 1;
+      background-color: rgb(169, 214, 203);
+    }
+    .carousel-indicators button {
+      width: 12px;
+      height: 12px;
+      background-color: #bbb;
+      border-radius: 50%;
+      border: none;
+      margin: 0 5px;
+      transition: background-color 0.3s ease-in-out;
+    }
+  
+    .carousel-indicators .active {
+      background-color: #ff6600; /* Active indicator color */
+    }
+  
+    /* Custom Carousel Controls */
+    .custom-control {
+      width: 50px;
+      height: 50px;
+      background-color: rgba(255, 102, 0, 0.7); /* Semi-transparent */
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .custom-arrow {
+      filter: invert(1); /* Makes arrow white for visibility */
+    }
+  
+    .custom-control:hover {
+      background-color: rgba(255, 102, 0, 1); /* Full opacity on hover */
+    }
+
+    .testimonial-img
+    {
+      width: 90px;
+    }
+  </style>
+  </section>  
+  
+
+
+
+
+
+    <footer class="text-dark bg-skin">
         <div class="container py-3">
             <div class="row g-4">
                 <div class="col-md-4">
@@ -130,6 +287,10 @@
               <small>✨ Coded by <strong>Vivek</strong> | Crafted with ❤️ by <strong>Tanya</strong> ✨</small>
           </div>
         </div>
-    </footer> -->
+    </footer> 
+
+      <!-- Defer Non-Critical JavaScript -->
+  <script src="assets/js/scripts.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -76,18 +76,21 @@
                   <li class="nav-item">
                     <a class="nav-link mobileNav" href="testimonials.html">Testimonials</a>
                   </li>
-                  <li class="nav-item d-flex align-items-center">
+                  <li class="nav-item d-flex align-items-center contactBtn">
                 <a class="btn btn-primary rounded-pill mobileNav myBtn" href="contact.html">Contact</a>
                   </li>
                 </ul>
-              </div>
-              <div class="mt-auto w-100 text-center mobileIMG">
-                <img src="assets/images/Ellipse 40.png" alt="Your Logo" class="img-fluid w-75">
               </div>
             </div>
         </div>
     </nav>
     <main?>
+
+    <div class="about-header">
+      <h1>About Our Health Coach</h1>
+      <p>Empowering you to achieve a healthier, happier lifestyle through personalized coaching and expert guidance.</p>
+  </div>
+
         <section class="py-5">
             <div class="container">
                 <div class="row align-items-center gx-4">
@@ -97,7 +100,7 @@
                     <div class="col-md-6 offset-md-1">
                         <div class="ms-md-2 ms-lg-5">
                             <span class="text-muted">Our Story</span>
-                            <h2 class="display-5 fw-bold">About Us</h2>
+                            <h2 class="display-5 fw-bold myHeading">About Us</h2>
                             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                             <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                         </div>
@@ -105,13 +108,14 @@
                 </div>
             </div>
         </section>
+
         <section class="py-5">
             <div class="container">
                 <div class="row gx-4 align-items-center">
                     <div class="col-md-6 order-2 order-lg-1">
                         <div class="me-md-2 me-lg-5 text-center mt-5 mt-md-0">
                             <span class="text-muted">Our Story</span>
-                            <h2 class="display-5 fw-bold">About Us</h2>
+                            <h2 class="display-5 fw-bold myHeading">About Us</h2>
                             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris sed do eiusmod tempor.</p>
                         </div>
                     </div>
@@ -121,12 +125,9 @@
                 </div>
             </div>
         </section>
+
         <section>
-            <style>
-        body {
-            background: linear-gradient(to right, #ff9a9e, #fad0c4);
-            font-family: Arial, sans-serif;
-        }
+        <style>
         .timeline {
             position: relative;
             padding: 50px 0;
@@ -173,11 +174,11 @@
             font-size: 3rem;
             font-weight: bold;
         }
-    </style>
+        </style>
 </head>
 <body>
     <div class="hero-section">
-        <h1>My Transformation Journey</h1>
+        <h1 class="myHeading">My Transformation Journey</h1>
         <p>From struggle to strength – a journey of health, discipline, and inspiration!</p>
     </div>
     
@@ -200,8 +201,128 @@
         </div>
     </div>
         </section>
+        <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section py-5">
+        <div class="container text-center p-3" data-aos="fade-up">
+          <h2 class="headingLine p-3 mb-5 mt-5 myHeading">Testimonials</h2>
+          <p class="p-3">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div>
+      
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            
+            <div class="carousel-inner">
+              
+              <!-- Testimonial Item 1 -->
+              <div class="carousel-item active">
+                <div class="testimonial-item text-center">
+                  <img src="assets/images/Ellipse 40.png" class="testimonial-img rounded-circle" alt="">
+                  <h3 class="fs-5 m-3">Saul Goodman</h3>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    Proin iaculis purus consequat sem cure dignissim donec porttitora entum suscipit rhoncus.
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+      
+              <!-- Testimonial Item 2 -->
+              <div class="carousel-item">
+                <div class="testimonial-item text-center">
+                  <img src="assets/images/Ellipse 40.png" class="testimonial-img rounded-circle" alt="">
+                  <h3 class="fs-5 m-3">Sara Wilsson</h3>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    Export tempor illum tamen malis malis eram quae irure esse labore.
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+      
+              <!-- Testimonial Item 3 -->
+              <div class="carousel-item">
+                <div class="testimonial-item text-center">
+                  <img src="assets/images/Ellipse 40.png" class="testimonial-img rounded-circle" alt="">
+                  <h3 class="fs-5 m-3">Jena Karlis</h3>
+                  <p class="m-3">
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    Enim nisi quem export duis labore cillum quae magna enim sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum culpa harum, provident minima commodi rerum adipisci dolores. 
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+      
+            </div>
+      
+            <!-- Controls -->
+            <button class="carousel-control-prev custom-control w-5 h-5 mt-5" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon custom-arrow w-25"></span>
+            </button>
+            <button class="carousel-control-next custom-control w-5 h-5 mt-5" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon custom-arrow w-25"></span>
+            </button>
+      
+            <!-- Indicators -->
+            <div class="carousel-indicators position-sticky">
+              <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active rounded-indicator"></button>
+              <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" class="rounded-indicator"></button>
+              <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" class="rounded-indicator"></button>
+            </div>
+      
+          </div>
+        </div>
+
+           <!-- Custom CSS -->
+    <style>
+        /* Rounded indicators */
+        .carousel-indicators [data-bs-target]      
+        {
+          width: 12px;
+          height: 12px;
+          opacity: 1;
+          background-color: rgb(169, 214, 203);
+        }
+        .carousel-indicators button {
+          width: 12px;
+          height: 12px;
+          background-color: #bbb;
+          border-radius: 50%;
+          border: none;
+          margin: 0 5px;
+          transition: background-color 0.3s ease-in-out;
+        }
+      
+        .carousel-indicators .active {
+          background-color: #ff6600; /* Active indicator color */
+        }
+      
+        /* Custom Carousel Controls */
+        .custom-control {
+          width: 50px;
+          height: 50px;
+          background-color: rgba(255, 102, 0, 0.7); /* Semi-transparent */
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      
+        .custom-arrow {
+          filter: invert(1); /* Makes arrow white for visibility */
+        }
+      
+        .custom-control:hover {
+          background-color: rgba(255, 102, 0, 1); /* Full opacity on hover */
+        }
+  
+        .testimonial-img
+        {
+          width: 90px;
+        }
+      </style>
+    </section>
     </main>
-    <!-- <footer class="text-dark bg-skin">
+   <footer class="text-dark bg-skin">
         <div class="container py-3">
             <div class="row g-4">
                 <div class="col-md-4">
@@ -241,6 +362,10 @@
               <small>✨ Coded by <strong>Vivek</strong> | Crafted with ❤️ by <strong>Tanya</strong> ✨</small>
           </div>
         </div>
-    </footer> -->
+    </footer>
+
+     <!-- Defer Non-Critical JavaScript -->
+  <script src="assets/js/scripts.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

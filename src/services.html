@@ -76,24 +76,21 @@
                   <li class="nav-item">
                     <a class="nav-link mobileNav" href="testimonials.html">Testimonials</a>
                   </li>
-                  <li class="nav-item d-flex align-items-center">
-                <a class="btn btn-primary rounded-pill mobileNav myBtn" href="contact.html">Contact</a>
+                  <li class="nav-item d-flex align-items-center contactBtn">
+                    <a class="btn btn-primary rounded-pill mobileNav myBtn" href="contact.html">Contact</a>
                   </li>
                 </ul>
-              </div>
-              <div class="mt-auto w-100 text-center mobileIMG">
-                <img src="assets/images/Ellipse 40.png" alt="Your Logo" class="img-fluid w-75">
               </div>
             </div>
         </div>
     </nav>
     <main?>
   
-    <section class="py-5 bg-light">
+    <section class="py-5">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 mb-4 mb-lg-0">
-            <h1 class="display-3 fw-bold">Anyone, anywhere, can start <span class="text-primary">Bootstrap</span></h1>
+            <h1 class="display-3 fw-bold myHeading">Anyone, anywhere, can start <span class="text-primary">Bootstrap</span></h1>
             <p class="lead my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat erat quis pulvinar semper.</p><a class="btn btn-lg btn-primary" href="">Get Started</a>
           </div>
           <div class="col-lg-6"><img alt="" class="img-fluid" src="https://freefrontend.dev/assets/square.png"></div>
@@ -142,68 +139,67 @@
          .services-section {
             padding: 50px 0;
             text-align: center;
-            background: #fff;
         }
         .service-card {
             padding: 20px;
             border-radius: 10px;
-            background: #ffdde1;
+            background: rgb(169, 214, 203);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             margin: 20px;
         }
       </style>
       <div class="container services-section">
-        <h2>Our Services</h2>
+        <h2 class="myHeading">Our Services</h2>
         <div class="row">
-            <div class="col-md-4">
+            <div class="card col-md-4 bg-skin">
                 <div class="service-card">
                     <h4>Personalized Diet Plans</h4>
                     <p>Customized meal plans based on your health goals.</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="card col-md-4 bg-skin">
                 <div class="service-card">
                     <h4>Fitness Coaching</h4>
                     <p>One-on-one fitness coaching for sustainable results.</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="card col-md-4 bg-skin">
                 <div class="service-card">
                     <h4>Mindset Coaching</h4>
                     <p>Transform your mindset to achieve lasting change.</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="card col-md-4 bg-skin">
                 <div class="service-card">
                     <h4>Weight Management</h4>
                     <p>Guidance on healthy weight loss or muscle gain.</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="card col-md-4 bg-skin">
                 <div class="service-card">
                     <h4>Meal Prep Guidance</h4>
                     <p>Learn how to prepare nutritious meals effortlessly.</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="card col-md-4 bg-skin">
                 <div class="service-card">
                     <h4>Detox Programs</h4>
                     <p>Cleanse your body with natural detoxification methods.</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="card col-md-4 bg-skin">
                 <div class="service-card">
                     <h4>Group Training</h4>
                     <p>Fun and interactive group workout sessions.</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="card col-md-4 bg-skin">
                 <div class="service-card">
                     <h4>Holistic Wellness</h4>
                     <p>Integrative health approaches for overall well-being.</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="card col-md-4 bg-skin">
                 <div class="service-card">
                     <h4>Online Coaching</h4>
                     <p>Get expert guidance anytime, anywhere.</p>
@@ -218,7 +214,7 @@
         <div class="row justify-content-center text-center mb-2 mb-lg-4">
           <div class="col-12 col-lg-8 col-xxl-7 text-center mx-auto">
             <span class="text-muted">Pricing Table</span>
-            <h2 class="display-5 fw-bold">Our Pricing</h2>
+            <h2 class="display-5 fw-bold myHeading">Our Pricing</h2>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta harum ipsum venenatis metus sem veniam eveniet aperiam suscipit.</p>
           </div>
         </div>
@@ -304,8 +300,130 @@
         </div>
       </div>
     </section>
+
+    <section id="testimonials" class="testimonials section py-5">
+      <div class="container text-center p-3" data-aos="fade-up">
+        <h2 class="headingLine p-3 mb-5 mt-5 myHeading">Testimonials</h2>
+        <p class="p-3">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div>
+    
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+          
+          <div class="carousel-inner">
+            
+            <!-- Testimonial Item 1 -->
+            <div class="carousel-item active">
+              <div class="testimonial-item text-center">
+                <img src="assets/images/Ellipse 40.png" class="testimonial-img rounded-circle" alt="">
+                <h3 class="fs-5 m-3">Saul Goodman</h3>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure dignissim donec porttitora entum suscipit rhoncus.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+    
+            <!-- Testimonial Item 2 -->
+            <div class="carousel-item">
+              <div class="testimonial-item text-center">
+                <img src="assets/images/Ellipse 40.png" class="testimonial-img rounded-circle" alt="">
+                <h3 class="fs-5 m-3">Sara Wilsson</h3>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+    
+            <!-- Testimonial Item 3 -->
+            <div class="carousel-item">
+              <div class="testimonial-item text-center">
+                <img src="assets/images/Ellipse 40.png" class="testimonial-img rounded-circle" alt="">
+                <h3 class="fs-5 m-3">Jena Karlis</h3>
+                <p class="m-3">
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum culpa harum, provident minima commodi rerum adipisci dolores. 
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+    
+          </div>
+    
+          <!-- Controls -->
+          <button class="carousel-control-prev custom-control w-5 h-5 mt-5" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon custom-arrow w-25"></span>
+          </button>
+          <button class="carousel-control-next custom-control w-5 h-5 mt-5" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon custom-arrow w-25"></span>
+          </button>
+    
+          <!-- Indicators -->
+          <div class="carousel-indicators position-sticky">
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active rounded-indicator"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" class="rounded-indicator"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" class="rounded-indicator"></button>
+          </div>
+    
+        </div>
+      </div>
+  
+         <!-- Custom CSS -->
+    <style>
+      /* Rounded indicators */
+      .carousel-indicators [data-bs-target]      
+      {
+        width: 12px;
+        height: 12px;
+        opacity: 1;
+        background-color: rgb(169, 214, 203);
+      }
+      .carousel-indicators button {
+        width: 12px;
+        height: 12px;
+        background-color: #bbb;
+        border-radius: 50%;
+        border: none;
+        margin: 0 5px;
+        transition: background-color 0.3s ease-in-out;
+      }
+    
+      .carousel-indicators .active {
+        background-color: #ff6600; /* Active indicator color */
+      }
+    
+      /* Custom Carousel Controls */
+      .custom-control {
+        width: 50px;
+        height: 50px;
+        background-color: rgba(255, 102, 0, 0.7); /* Semi-transparent */
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .custom-arrow {
+        filter: invert(1); /* Makes arrow white for visibility */
+      }
+    
+      .custom-control:hover {
+        background-color: rgba(255, 102, 0, 1); /* Full opacity on hover */
+      }
+  
+      .testimonial-img
+      {
+        width: 90px;
+      }
+    </style>
+    </section>  
     </main>
-    <!-- <footer class="text-dark bg-skin">
+
+
+   <footer class="text-dark bg-skin">
         <div class="container py-3">
             <div class="row g-4">
                 <div class="col-md-4">
@@ -345,6 +463,10 @@
               <small>✨ Coded by <strong>Vivek</strong> | Crafted with ❤️ by <strong>Tanya</strong> ✨</small>
           </div>
         </div>
-    </footer> -->
+    </footer>
+
+      <!-- Defer Non-Critical JavaScript -->
+  <script src="assets/js/scripts.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
