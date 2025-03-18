@@ -22,7 +22,7 @@ html {
 }
 
 body {
-    font-family: 'sans-serif', 'Esteban', 'Poppins';  
+    /* font-family: 'sans-serif', 'Esteban', 'Poppins';   */
     margin: 0;
     padding: 0;
     background-color: white;
@@ -133,14 +133,16 @@ body {
 }
 
 /* Show button when scrolling down */
-@media (min-height: 800px) {
-    .scroll-top {
+@media (min-height: 800px) 
+  {
+    .scroll-top 
+    {
         opacity: 1;
         visibility: visible;
     }
-}
+  }
 
-    .scroll-top:hover { background: rgba(6, 80, 60, 0.8); } 
+  .scroll-top:hover { background: rgba(6, 80, 60, 0.8); } 
  
   .myHeading
   {
@@ -292,6 +294,12 @@ body {
    justify-content: center;
  }
 
+ .carousel-item
+ {
+  min-height: 315px;
+  max-height: 315px;
+ }
+
  .custom-arrow {
    filter: invert(1); /* Makes arrow white for visibility */
  }
@@ -310,6 +318,10 @@ body {
 
 @media (max-width: 767px) 
 { 
+  body 
+  {
+    font-family: 'Esteban', 'sans-serif', 'Poppins';  
+  }
   .myHeading 
   {
     font-size: 2rem; /* Allows expansion when toggled */
@@ -471,6 +483,10 @@ body {
   }
 
 
+  .OfferCard  img
+  {
+    height: 10.5rem;
+  }
   /* Services */
 
   .card {
@@ -480,4 +496,13 @@ body {
   .card:hover {
     transform: scale(1.25); /* Slight zoom effect */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  }
+
+  @media (max-width: 500px) 
+  {
+    .carousel-item 
+  {
+    min-height: 486px;
+    max-height: 486px;
+  }
   }
